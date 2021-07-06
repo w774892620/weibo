@@ -58,4 +58,9 @@ class User extends Authenticatable
         return "https://cdn.learnku.com/uploads/avatars/39858_1557480184.jpg!/both/100x100";
     }
 
+    public function statuses()
+    {
+        return $this->hasMany(Status::class);
+    }
+
 }
